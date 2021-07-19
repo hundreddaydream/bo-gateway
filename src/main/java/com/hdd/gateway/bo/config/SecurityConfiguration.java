@@ -96,6 +96,7 @@ public class SecurityConfiguration {
             .pathMatchers("/api/register").permitAll()
             .pathMatchers("/api/activate").permitAll()
             .pathMatchers("/api/authenticate").permitAll()
+            .pathMatchers("/api/public/**").permitAll()
             .pathMatchers("/api/account/reset-password/init").permitAll()
             .pathMatchers("/api/account/reset-password/finish").permitAll()
             .pathMatchers("/api/auth-info").permitAll()
